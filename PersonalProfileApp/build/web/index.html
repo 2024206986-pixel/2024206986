@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-header bg-primary text-white text-center py-4">
+                        <h2 class="font-weight-light"><i class="fas fa-user-edit mr-2"></i>Create Your Profile</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <form action="ProfileServlet" method="POST">
+                            
+                            <div class="form-group">
+                                <label><i class="fas fa-user text-primary mr-1"></i> Full Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label><i class="fas fa-id-card text-primary mr-1"></i> Student ID</label>
+                                    <input type="text" name="studentId" class="form-control" placeholder="e.g. 2026123456" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label><i class="fas fa-graduation-cap text-primary mr-1"></i> Program</label>
+                                    <input type="text" name="program" class="form-control" placeholder="e.g. CS230" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label><i class="fas fa-envelope text-primary mr-1"></i> Email Address</label>
+                                <input type="email" name="email" class="form-control" placeholder="username@student.uitm.edu.my" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label><i class="fas fa-heart text-primary mr-1"></i> Hobbies</label>
+                                <input type="text" name="hobbies" class="form-control" placeholder="e.g. Coding, Reading, Football" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label><i class="fas fa-comment-alt text-primary mr-1"></i> Short Self-Introduction</label>
+                                <textarea name="intro" class="form-control" rows="4" placeholder="Tell us a bit about yourself..." required></textarea>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg px-5 shadow-sm">Submit Profile</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
